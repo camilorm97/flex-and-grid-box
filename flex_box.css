@@ -1,0 +1,135 @@
+/* Estilos de TAGs para los ejercicios */
+body{
+    background-color: rgba(164, 164, 164, 0.4);
+}
+h1, h2{
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+}
+.btn-ejercicios{
+    padding: 10px 25px;
+    border-radius: 5px;
+    background-color: #4D7298;
+    border: 2px solid #77A6B6;
+    color: #FFFFFF;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+.btn-ejercicios a{
+    text-decoration: none;
+    color: #FFF;
+}
+.divs-ejercicios{
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
+    background-color: #FFF;
+}
+.divs-ejercicios:not(:first-child){
+    margin-top: 30px;
+}
+/* ==================================== */
+
+
+/* ======= 1. Primer ejercicio ======== */
+#ejercicio1 ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+/* ===================================== */
+
+/* ======= 2. Segundo ejercicio ======== */
+#ejercicio2 ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+}
+#ejercicio2 ul li{
+    width: 33%;
+}
+/* ===================================== */
+
+/* ======= 3. Tercer ejercicio ======== */
+#ejercicio3{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+/* ===================================== */
+
+/* ======= 4. Cuarto ejercicio ======== */
+#ejercicio4 ul{
+    width: 450px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 30px auto 0;
+    border: 1px solid #4D7298;
+}
+@media (max-width: 576px) {
+    #ejercicio4{
+        width: 90%;
+    }
+}
+/* ===================================== */
+
+/* ======= 5. Ejercicio Extra ======== */
+
+#cajas-flex{
+    display: flex;
+    gap: 30px;
+    flex-flow: row-reverse wrap;
+    justify-content: center;
+}
+#cajas-flex .myFlex{
+    min-width: 200px;
+    max-width: 18%;
+    padding: 40px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #000;
+    color: #FFF;
+}
+@media (max-width: 1400px) {
+    #cajas-flex .myFlex {
+        max-width: 20%;
+    }
+}
+@media (max-width: 1200px) {
+    #cajas-flex .myFlex {
+        max-width: 22%;
+    }
+}
+@media (max-width: 992px) {
+    #cajas-flex .myFlex {
+        max-width: 35%;
+    }
+}
+@media (max-width: 800px) {
+    #cajas-flex .myFlex {
+        min-width: 150px;
+        max-width: 30%;
+    }
+}
+@media (max-width: 620px) {
+    #cajas-flex .myFlex {
+        max-width: 70%;
+    }
+}
+#cajas-flex > #bg-green{
+    background-color: #2f8a42;
+    color: #FFF;
+}
+#cajas-flex .myFlex:last-child{
+    max-width: 100%;
+    background-color: #166493;
+    color: #FFF;
+}
+/* ===================================== */
